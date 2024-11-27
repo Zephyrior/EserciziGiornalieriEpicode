@@ -1,0 +1,57 @@
+*{
+    color: rgb(161, 161, 161);
+}
+.page {
+    text-align: center;
+    margin: auto;
+}
+
+#heading {
+    font-weight: bold;
+    text-align:center
+}
+#heading1{
+    text-align: left;
+}
+#slogan {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#slogback{
+    background-color: rgb(244, 248, 198);
+    padding: 0.01%;
+    border-top: 1px;
+    border-top: yellow;
+    
+}
+#slogfont{
+    border-top-style: 1px rgb(149, 255, 0);
+}
+
+#slogfont, #slogan{
+    font-size: smaller;
+    color: rgb(0, 128, 105);
+}
+#figcap{
+    font-color
+}
+#asd{
+    text-transform: uppercase;
+    color: red;
+}
+#figcap{
+    color: rgb(157, 157, 157);
+}
+.link{
+    color: rgb(0, 128, 105);
+}
+h3 {
+    border-bottom: 1px solid rgb(0, 128, 105);
+}
+aside, section, footer, #heading1 {
+    margin: auto;
+    width: 50%;
+}
+#extra{
+    border-left: 1px solid rgb(0, 128, 105);
+}

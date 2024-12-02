@@ -89,9 +89,12 @@ let name2 = "John";
 console.log(name1);
 console.log(name2);
 
-if (name1 === name2){
+if (name1 === name2) {
   console.log("john è uguale a John")  
 } else 
-  console.log("john non è uguale a John perché il primo inizia minuscolo e il secondo inizia con maiuscolo");
+  console.log("john non è uguale a John perché il primo inizia minuscolo e il secondo inizia con maiuscolo.");
  
-// if (name1 == name2)
+if (name1 === name2) {
+  console.log("john è uguale a John ")
+} else if (name2.toLowerCase === name1){
+ } else console.log("John è uguale a john se il primo inizi con la lettera minuscola.");

@@ -1,0 +1,81 @@
+body {
+    background-color: #ebeb;
+}
+main {
+    width: 60%;
+    text-align: center;
+    border: 2px solid rgba(0, 153, 255, 0.533);
+    border-radius: 5%;
+    background-color: rgba(246, 170, 134, 0.431);
+    box-shadow: 10px 10px 2px rgba(113, 113, 219, 0.66);
+}
+header {
+    text-align: center;
+}
+header h1 {
+    text-decoration: underline rgba(222, 72, 97, 0.561);
+}
+.celleTombola {
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    border: 1px solid;
+    margin: 2px;
+    background-color: wheat;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.celleTombola:hover {
+    background-color: white;
+    color: red;
+}
+#tableTombola{
+    padding: 1rem;
+}
+
+input {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1000%;
+}
+#estrazioneNum h3 {
+    background-color: white;
+    display: inline-block;
+    border: 1px solid rgba(0, 153, 255, 0.533);
+    font-size: 3em;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    border-radius: 500%;
+}
+button {
+    height: min-content;
+    background-color: rgb(242, 155, 180);
+    border-radius: 10%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    box-shadow: 7px 10px 2px rgb(255, 78, 107);
+}
+button:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+button:active {
+    background-color: rgb(193, 87, 105);
+}
+#mainPage {
+    display: flex;
+}
+section {
+    margin-left: 2rem;
+    display: inline-flex;
+    flex-direction: row;
+    width: 40%;
+    text-align: auto
+    ;
+}
+.estratto {
+    background-color: rgb(189, 48, 71);
+    color: white;
+}

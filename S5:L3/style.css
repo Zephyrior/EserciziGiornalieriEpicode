@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0;
+  }*/
+
+/* Header */
+nav {
+  display: flex;
+  background-color: #fef7e2;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+nav .navBar:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav > .navBar img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+nav .navBar {
+  background-color: #ffdf7f;
+  border-radius: 50px;
+}
+.navBar span {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+h1,
+h2,
+h3,
+span,
+p,
+button {
+  color: #732104;
+}
+
+main h1 {
+  font-size: 3rem;
+}
+.mainContainer {
+  display: flex;
+  display: inline-block;
+  width: 40%;
+}
+.mainItems {
+  overflow: hidden;
+}
+.mainContainer .mainItems img {
+  max-width: 100%;
+  height: auto;
+}
+.mainContainer .mainItems {
+  background-color: #fef7e2;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.itemCap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.subCap {
+  text-align: center;
+}
+.itemCap p:first-child {
+  font-weight: bold;
+}
+.subCap p:nth-child(2) {
+  font-size: 0.9rem;
+}
+.mainItems button {
+  background-color: #ffdf7f;
+  border: none;
+  border-radius: 50px;
+  padding: 0.7em 4em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+main,
+section {
+  margin: 1rem;
+}
+section h2 {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.secDiv {
+  background-color: #fef7e2;
+  padding: 1.5rem;
+}
+.secDiv h3 {
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+.secDiv p {
+  font-size: 1.5rem;
+}
+.secDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  nav .navBar:nth-child(2),
+  nav .navBar:nth-child(3) {
+    order: 0;
+  }
+  nav .navBar:first-child {
+    order: 1;
+  }
+  nav .navBar:nth-child(4),
+  nav .navBar:nth-child(5) {
+    order: 2;
+  }
+  main .mainContainer:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  nav {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1000px) {
+}
+@media screen and (min-width: 1001px) {
+}

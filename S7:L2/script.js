@@ -21,17 +21,19 @@ userForm.onsubmit = function (event) {
   userList.push(newUser);
 
   localStorage.setItem("userList", JSON.stringify(userList));
+  
+  firstName.value ="";
+  lastName.value="";
 };
 
 const makeList = function (obj) {
-  /*const header = document.getElementById("header")
-    if (localStorage.getItem(userList)) {
+  const header = document.getElementById("header")
+    if (localStorage.getItem("userList") && !document.getElementById("userListHeader")) {
         const headerList = document.createElement("h1");
-        headerList.innerText = "User List";
+        headerList.id = "userListHeader"
+        headerList.innerText = "User List:";
         header.appendChild(headerList);
-    } else {
-        delete headerList;
-    };*/
+    };
 
   const listContainer = document.getElementById("userList");
   const newUserList = document.createElement("li");
@@ -54,7 +56,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 const delButton = document.getElementById("deleteButton");
 
-delButton.addEventListener("click", function () {
+/*delButton.addEventListener("click", function () {
   const userListFromStorage = JSON.parse(localStorage.getItem("userList"));
   //localStorage.removeItem(userListFromStorage[userList.length]);
   //let i = localStorage.length;
@@ -62,6 +64,16 @@ delButton.addEventListener("click", function () {
   userListFromStorage.splice(-1, 1);
   localStorage.setItem("userList", JSON.stringify(userListFromStorage));
   location.reload();
+});*/
+
+delButton.addEventListener("click", function () {
+    if (userList.length > 0) {
+        userList.pop();
+        localStorage.setItem("userList", JSON.stringify(userList));
+        const listContainer = document.getElementById("userList");
+        listContainer.innerHTML ="";
+        userList.forEach((userObj) => makeList(userObj));
+    }
 });
 
 window.addEventListener("DOMContentLoaded", function () {});

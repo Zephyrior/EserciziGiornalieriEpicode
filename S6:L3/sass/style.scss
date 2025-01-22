@@ -1,0 +1,44 @@
+@import "./partials/resets";
+@import "./partials/fonts";
+@import "./partials/colori";
+@import "./partials/mixinsGenerici";
+@import "./partials/bottoni";
+@import "./partials/animazioni";
+@import "./partials/spaziature";
+
+header {
+  background-color: $primary-Color;
+
+  display: flex;
+  align-items: center;
+
+  nav {
+    ul {
+      li {
+        display: inline-block;
+        padding: $size-1;
+      }
+    }
+  }
+}
+main {
+  h1 {
+    @include dynamicTitle (30px);
+    font-family: $titleFont;
+  }
+}
+.hero {
+  background-color: $heroBg;
+}
+section {
+  display: flex;
+}
+.btn1 {
+  @include dynamicBtn($btn1-Color);
+}
+.btn2 {
+  @include dynamicBtn($btn2-Color);
+}
+.btn3 {
+  @include dynamicBtn($btn3-Color);
+}

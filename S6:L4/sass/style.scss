@@ -1,0 +1,23 @@
+@import "./partials/bootstrap-overrides";
+footer {
+    font-size: $fontSize-10;
+}
+#week-deal #collapseWeekDeal .card {
+    border-width: $border-6;
+}
+#day-deal img {
+    border-width: $border-10;
+}
+
+.container h1 {
+    color: $epicode-1 !important;
+}
+
+.container .fs-3 {
+    color: $epicode-3 !important;
+}
+
+.container .text-light {
+    color: $epicode-2 !important;
+}
+

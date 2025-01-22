@@ -1,0 +1,39 @@
+$size-0: 0;
+$size-1: 0.25rem;
+$size-2: 0.5rem;
+$size-3: 1rem;
+$size-4: 1.5rem;
+$size-5: 3rem; 
+
+$sizes: (
+  xs: 10px,
+  sm: 20px,
+  md: 30px,
+  lg: 60px,
+  xl: 120px,
+  xxl: 240px
+);
+
+ @each $key, $value in $sizes {
+    .padding-#{$key} {
+        padding: $value;
+        &-inline {
+            padding-inline: $value;
+        }
+        &-block {
+            padding-block: $value;
+        }
+    }
+ };
+
+ @each $key, $value in $sizes {
+    .margin-#{$key} {
+        margin: $value;
+        &-inline {
+            margin-inline: $value;
+        }
+        &-block {
+            padding-block: $value;
+        }
+    }
+ };

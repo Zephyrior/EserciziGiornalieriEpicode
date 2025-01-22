@@ -1,0 +1,15 @@
+@mixin dynamicBtn ($bgColor:violet) {
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border: solid scale-color($bgColor, $lightness: -80%);
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: $bgColor;
+}
+@mixin dynamicTitle($size:20px) {
+    font-weight: bold;
+    margin-block: 2rem;
+    text-transform: uppercase;
+    color: crimson;
+    font-size: $size;
+}

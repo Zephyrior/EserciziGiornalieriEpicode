@@ -4,6 +4,7 @@ fetch("https://striveschool-api.herokuapp.com/books")
       return libriObj.json();
     }
   })
+  //.then((booksObj) => localStorage.setItem("booksObj"))
   .then((booksObj) => {
     console.log(booksObj);
     const colletions = document.getElementById("bookCollections");
@@ -46,7 +47,7 @@ fetch("https://striveschool-api.herokuapp.com/books")
       colletions.appendChild(col);
 
       delButton.addEventListener("click", function () {
-        card.remove();
+        col.remove();
       });
 
       /*const col2 = document.createElement("div");
@@ -54,8 +55,8 @@ fetch("https://striveschool-api.herokuapp.com/books")
       cart.appendChild(col2);*/
 
       carButton.addEventListener("click", function (){
-        card.remove();
-        cart.appendChild(card);
+        col.remove();
+        cart.appendChild(col);
       });
     }
   })
